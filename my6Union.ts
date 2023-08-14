@@ -1,17 +1,17 @@
-let score: number | string = 33 // union ( | ) allows to assign a value of any type which is declared with union 
-score=44 // allowed
-score='55' // allowed // its string then also its crct bcos both string and number value is accepted
+// let score: number | string = 33 // union ( | ) allows to assign a value of any type which is declared with union 
+// score=44 // allowed
+// score='55' // allowed // its string then also its crct bcos both string and number value is accepted
 
-type User = {
-    name: string
-    id: number
-}
-type Admin = {
-    username: string
-    id: number
-}
-let akash: User | Admin = {name: "aksh", id: 62} // allowed
-akash={username:"ak", id: 62} // alowed
+// type User = {
+//     name: string
+//     id: number
+// }
+// type Admin = {
+//     username: string
+//     id: number
+// }
+// let akash: User | Admin = {name: "aksh", id: 62} // allowed
+// akash={username:"ak", id: 62} // alowed
 
 // function getDbId(id: number | string){
 //     console.log(`DB id is: ${id}`);
