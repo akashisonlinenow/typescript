@@ -1,4 +1,6 @@
 var akash = { dbId: 22, email: "ak@gmaik", userId: 2211,
+    role: "admin",
+    githubToken: "github",
     startTrial: function () {
         return "trial started";
     },

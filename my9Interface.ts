@@ -8,7 +8,17 @@ interface User {
     getCoupon(couponname: string, value: number): number
 }
 
-const akash: User = {dbId: 22 ,email: "ak@gmaik", userId:2211, 
+interface User {       // it is aka reopening of interface 
+    githubToken: string
+}
+
+interface Admin extends User {   // Admin now inherited all props of User
+    role: "admin" | "ta" | "learner"
+}
+
+const akash: Admin = {dbId: 22 ,email: "ak@gmaik", userId:2211,
+role: "admin",   // this can be passed when we access Admin
+githubToken: "github", 
 startTrial: () => {
     return "trial started"
 },
